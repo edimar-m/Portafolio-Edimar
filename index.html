@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edimar Morles">
+    <meta name="description" content="Portafolio profesional de Edimar Morles">
+    <meta name="keywords" content="Portafolio, Developer, Front End, Programación">
+    <meta property="og:title" content="Portafolio">
+    <meta property="og:description" content="Portafolio profesional de Edimar Morles">
+    <meta property="og:type" content="article">
+    <meta property="og:site name" content="portafolio-edimar">
+    <meta property="og:url" content="https://edimar-m.github.io/Portfolio/">
+    <meta property="og:image" content="https://github.com/edimar-m/Portfolio/blob/master/images/Portafolio.png">
+  
+    <link  rel="icon"   href="./images/Favicon.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header-style.css">
+    <link rel="stylesheet" href="./css/about-style.css">
+    <link rel="stylesheet" href="./css/knowledge-style.css">
+    <link rel="stylesheet" href="./css/project-style.css">
+    <link rel="stylesheet" href="./css/quote-style.css">
+    <link rel="stylesheet" href="./css/contact-style.css">
+    <link rel="stylesheet" href="./css/footer-style.css">
+    
+    <title>EDIMAR MORLES</title>
+</head>
+<body>
+    <!--Comienza Header-->
+    <header>
+        <section class="menu-container">
+            
+            <!--menú hamburguesa-->
+
+            <input type="checkbox" id="menu">
+            <label for="menu" id="label-icon"> ☰ </label>
+
+            <!-- Comienza Menú de navegación-->
+                <ul class="menu-nav">
+                    <li>
+                      <a href="#about" class="link-nav">HOLA</a>
+                    </li>
+                    <li>
+                        <a href="#knowledge" class="link-nav">CONOCIMIENTOS</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="link-nav">PROYECTOS</a>
+                    </li>
+                    <li>
+                        <button type="button" class="button-nav"><a class="to-contact" href="#contact" aria-label="Botón de contacto">CONTACTO</a></button>
+                    </li>
+                </ul>
+            </nav>
+             <!-- Termina Menú de navegación-->
+        </section>
+    </header>
+    <!--Termina Header-->
+    <!--Comienza sección sobre mí-->
+    <section class="about-section" id="about">
+             <article class="about-info">
+                 <p class=" about-greeting">¡Hola! Soy</p>
+
+                 <h1 class="about-name">Edimar Morles</h1>
+
+                 <p class="about-description">Desarrolladora, músico, profesional de la hotelería y el turismo, amante de la naturaleza y el arte.</p>
+
+                 <button class="projects-button"><a class="projects-button-text" href="#projects">LO QUE HAGO</a></button>
+             </article>
+             
+             <figure class="about-image">
+             <img src="./images/undraw_dev_focus_b9xo.svg" alt="about-me-img" aria-hidden="true" width="90%">
+
+            </figure>
+    </section>
+     <!--Termina sección sobre mí-->
+
+     <!--Comienza sección conocimientos-->
+    <section class="knowledge-section" id="knowledge">
+        <!--<div class="column-content">-->
+            <h2   class="knowledge-title">Mis conocimientos </h2>
+
+            <p class="knowledge-description">
+                
+                Recientemente surgió en mí la inquietud de desarrollarme en el mundo de la programación, donde deseo profesionalizarme y hacer carrera. <br>
+                 Desde entonces he desarrollado las siguientes habilidades en Front-end.
+            </p>        
+            <div class="grid-knowledge">
+                <div class="item-knowledge">
+                    <i class="fab fa-html5" aria-hidden="true" id="knowledge-image">
+
+                    <p class="grid-knowledge-text"> HTML 5</p>
+                    </i>
+                </div>
+                <div class="item-knowledge">
+                    <i class="fab fa-css3-alt" aria-hidden="true" id="knowledge-image"></i> 
+
+                    <p class="grid-knowledge-text"> CSS 3</p>
+                    </i>
+                </div>
+                
+                <div class="item-knowledge">
+                    <i class="fab fa-sass" aria-hidden="true" id="knowledge-image" >
+                    
+                    <p class="grid-knowledge-text"> Sass</p>
+                    </i>
+                </div>
+                <div class="item-knowledge">
+                    <i class="fab fa-js-square" aria-hidden="true" id="knowledge-image">
+                    
+                    <p class="grid-knowledge-text"> JavaScript</p>
+                    </i>
+                </div>
+                <div class="item-knowledge">
+                    <i class="fab fa-react" aria-hidden="true" id="knowledge-image">
+                    
+                    <p class="grid-knowledge-text"> React</p>
+                    </i>
+                </div>
+                <div class="item-knowledge">
+                    <i class="fab fa-git-alt" aria-hidden="true" id="knowledge-image">
+                    
+                    <p class="grid-knowledge-text"> GIT</p>
+                    </i>
+                </div>
+            </div>
+    </section>
+    <!--Termina sección conocimientos-->
+
+    <!--Comienza sección proyectos-->
+    <section class="quote-section">
+            <i class="fa fa-quote-right" aria-hidden="true" id="quote-image"></i>
+            <blockquote class="quote">
+                <p class="quote">"Si das pescado a un hombre hambriento lo nutres durante una jornada. Si le enseñas a pescar, le nutrirás toda su vida"
+                </p>
+            </blockquote>
+            <h2 class="quote-author">Lao Tsé </h2>
+    </section>
+    <section class="project-section" id="projects">
+        <article class="project-info">
+            <h2 class="section-title">Mis proyectos</h2>
+            <p class="section-description">"Durante mi formación como desarrolladora en Ada he estado llevando a cabo estos maravillosos proyectos."</p>
+        </article>
+    <!--Comienza grilla proyectos-->
+           <article class="grid-projects">   
+              <figure class="project-img">
+                 <a href="https://edimar-m.github.io/Portfolio/">
+                 <img src="./images/Portafolio.png"  class="image-class" alt="Portfolio" width="90%" height="60%">
+                 <figcaption class="projects-text">Portfolio</figcaption>
+              </a>
+              </figure>
+              <figure class="project-img">
+                  <a href="https://edimar-m.github.io/Generador-de-memes/">
+                  <img src="https://github.com/edimar-m/Generador-de-memes/blob/master/images/screencapture-proyecto-generador-de-memes-claro.png" class="image-class" alt="Mobile-Dev" width="90%" height="60%">
+                     <figcaption class="projects-text">Generador de memes</figcaption>
+                   </a>
+                  </figure>
+              <figure class="project-img">
+                  <a href="https://edimar-m.github.io/proyecto-matcheADAs/">
+                  <img src="https://github.com/edimar-m/proyecto-matcheADAs/blob/master/assets/secreen-safari-matcheADAS.png" class="image-class" alt="Game-Dev" width="90%" height="60%">
+                     <figcaption class="projects-text">Match 3 Game </figcaption>
+                   </a>
+               </figure>
+               <figure class="project-img">
+                  <a href="#">
+                  <img src="./images/undraw_wallet_aym5 (1).svg" class="image-class" alt="Walet" width="90%" height="60%">
+                     <figcaption class="projects-text">Controlador de gastos</figcaption>
+                  </a>
+                  </figure>
+              <figure class="project-img">
+                  <a href="#">
+                  <img src="./images/undraw_home_cinema_l7yl.svg" class="image-class" alt="Cinema" width="90%" height="60%">
+                     <figcaption class="projects-text">Buscador de películas</figcaption>
+                  </a>
+              </figure>
+              <figure class="project-img">
+                  <a href="#">
+                  <img src="./images/undraw_checking_boxes_2ibd.svg" class="image-class"alt="Administrador Tareas" width="90%" height="60%">
+                     <figcaption class="projects-text">Todo app</figcaption>
+                  </a>
+              </figure>
+           </article>
+    <!--Fin grilla proyectos-->
+       </div>
+    </section>
+    <!--Termina sección proyectos-->
+
+    <!--Comienza sección contacto-->
+    <section class="contact-section" id="contact">
+        <article class="contact-container">
+            <div class="contact-me">
+                <h2 class="contact-title">Contactame</h2>
+                <p class="contact-description">Si quieres ponerte en contacto conmigo y ayudarme en este proceso de crecimiento profesional, puedes contactarme a través de los siguientes canales.
+                </p>
+
+                 <!--Links de contacto -->
+
+                 <div class="Links-container" >
+                    <ul class="social-links">
+                          <li class="contact-item">
+                              <a class="contact-link" href="https://twitter.com/MorlesEdimar" target="_blanc">
+                                 <i class="fab fa-twitter contact-icon" aria-hidden="true" id="icon-contact"></i>@MorlesEdimar</a>
+                           </li>
+                           <li class="contact-item">
+                            <a class="contact-link" href="https://github.com/edimar-m" target="_blanc">
+                               <i class="fab fa-github contact-icon"  aria-hidden="true" id="icon-contact"></i>edimar-m</a>
+                           </li>
+                           <li class="contact-item">
+                            <a class="contact-link" href="https://www.linkedin.com/in/edimar-andreína-morles-gonzález-613712109" target="_blanc">
+                                <i class="fab fa-linkedin-in contact-icon"  aria-hidden="true" id="icon-contact"></i>
+                               Edimar Andreína Morles González</a>
+                           </li>
+                           <li class="contact-item">
+                            <a class="contact-link" href="https://mail.google.com" target="_blanc">
+                              <i class="fas fa-envelope contact-icon"  aria-hidden="true" id="icon-contact"></i>
+                               edimar.morles@gmail.com</a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="contact-form">
+                    <h2 class="form-title">Escríbeme</h2>
+                    <form class="write-form">
+                        <div class="name-lastname">
+                            <div class="form">
+                               <label class="form-label" for="userName">Nombre*</label> 
+                               <input type="text" name="userName" id="user-name" placeholder="p.ej: Edimar" required>
+                               <i class="far fa-times-circle icon-invalid"  aria-hidden="true" aria-hidden="true"></i>
+                               <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="form">
+                               <label class="form-label" for="userLastname">Apellido*</label> 
+                               <input type="text" name="userLastname" id="user-last-name" placeholder="p.ej: Morles" required>
+                               <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
+                               <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                        <div class="mail">
+                               <label class="form-label" for="UserEmail">Email*</label> 
+                               <input type="email" name="userEmail" id="user-email" placeholder="p.ej.: edi.morles@gmail.com" required>
+                               <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
+                               <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+                       </div>
+                       <div class= "text">
+                              <label class="form-label" for="UserMessage">Mensaje*</label>
+                              <textarea name="userMessage" id="user-message" cols="35" rows="8" placeholder="Escriba un mensaje aquí " required></textarea>
+                              <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
+                              <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+                       </div>
+                </form>
+                      <button class="form-button" type="submit"><a class="form-button-text" href="#" aria-label="Enviar">Enviar</a></button>
+                </form>
+            </div>
+        </article>
+     </section> 
+    <!--Termina sección contacto-->
+
+    <!--Comienza mi footer-->  
+    <footer>
+        <!--Navegación footer-->
+        <nav class="footer-nav">
+            <ul class="footer-nav-menu">
+                <li class="footer-nav-list">
+                    <a href="#about" class="footer-about-link">HOLA</a>
+                </li>
+                <li class="footer-nav-list">
+                    <a href="#knowledge" class="footer-about-link">CONOCIMIENTOS</a>
+                </li>
+                <li class="footer-nav-list">
+                    <a href="#projects" class="footer-about-link">PROYECTOS</a>
+                </li>
+                <li class="footer-nav-list">
+                    <a href="#contact" class="footer-about-link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Cierro navegación footer-->
+       <nav class="footer-contact">
+           <ul class="social-links-footer">
+               <li class="footer-item">
+                    <a class="footer-social-link" href="https://twitter.com/MorlesEdimar" target="_blanc" aria-label="Twitter">
+                         <i class= "fab fa-twitter" aria-hidden="true" id="footer-icon"></i>
+                    </a>
+                </li>
+
+                <li class="footer-item">
+                   <a class="footer-social-link" href="https://github.com/edimar-m" target="_blanc" aria-label="Github">
+                         <i class="fab fa-github-alt" aria-hidden="true" id= "footer-icon"></i>
+                    </a>
+                </li>
+
+               <li class="footer-item">
+                   <a class="footer-social-link" href="https://www.linkedin.com/in/edimar-andreína-morles-gonzález-613712109" target="_blanc" aria-label="Linked-in">
+                         <i class="fab fa-linkedin-in" aria-hidden="true" id="footer-icon"></i>
+                  </a>
+            </li>
+            
+              <li class="footer-item">
+                 <a class="footer-social-link" href="https://mail.google.com" target="_blanc" aria-label="Mail">
+                         <i class="fas fa-envelope" aria-hidden="true" id="footer-icon"></i>
+                  </a>
+            </li>
+       </nav>
+       <p>Hecho con 💖 por Edimar Morles</p>
+    </footer>
+    <!--Fin de mi footer-->
+</body>
+</html>

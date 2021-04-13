@@ -1,0 +1,154 @@
+/*Contenedor principal*/
+
+.menu-container{
+    display: flex;
+    flex-direction:  row;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    padding: 20px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box; 
+    box-shadow: 0 0 30px 0; 
+    justify-content: flex-end;
+    align-content: space-between; 
+    position: fixed;  
+}
+
+/*Comienza Menú de navegación*/
+
+.menu-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 150px;
+}
+
+.link-nav{
+    font-weight: bold;
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    border:none;
+    text-align: center;
+    list-style: none; 
+}
+
+.button-nav{
+    border:0;
+    background-color:#8338EC;
+    width: 130%;
+    height: 2.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.to-contact{
+    color:white
+}
+/*pseudo-clases barra de navegación*/
+
+.button-nav:hover {
+    background-color: #F9A826;
+    font-size: 1.3rem;
+}
+.link-nav:hover {
+    color: #F9A826;
+    font-size: 1.3rem;
+}
+.link-nav:active{
+    border: 2px solid #F9A826;
+    border-radius: 100px;
+    padding: 2px;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+
+.link-nav:hover {
+  filter: brightness(110%);
+}
+
+#menu, #label-icon{
+display: none;
+}
+
+/*Media queries*/
+
+@media all and (max-width: 700px) {   
+  .menu-container{
+    position: relative;
+    width: 100vw;
+  }
+  .menu-nav{
+    display: none;
+  }
+  .button-nav{
+    width: 100%;
+  }
+  .about-image{
+    padding:0;
+  }
+  #menu:checked  ~ .menu-nav{
+    display:block;
+  }
+  #menu {
+    display: none;
+  }
+  #label-icon {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin-left: 30px;
+    
+  }
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  #label-icon:hover{
+    background: #D0CDE1;
+  }
+  
+  /* Estilo del boton cuando el menú está expandido*/
+  #menu:checked ~ #label-icon {
+    background: #8338EC; 
+  }
+
+  .menu-nav{
+    margin-top:0;
+    padding: 0;
+    width: 70%;
+    position: absolute;
+  }
+
+  .link-nav {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+  
+  /*Estilo cuando el mouse pasa sobre cada link del menu*/
+  .link-nav:hover {
+    filter: brightness(110%);
+  }
+
+ }
+ 
+
+  
+
